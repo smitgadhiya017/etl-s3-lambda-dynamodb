@@ -1,7 +1,10 @@
 import json
 import boto3
+import traceback
+from decimal import Decimal
 from datetime import datetime
 
+# AWS Clients
 s3 = boto3.client("s3")
 dynamodb = boto3.resource("dynamodb")
 
@@ -34,9 +37,17 @@ def lambda_handler(event, context):
 
         response = s3.get_object(Bucket=bucket, Key=key)
 
-        data = json.loads(response["Body"].read().decode("utf-8"))
+        # Convert JSON float -> Decimal
+        data = json.loads(
+            response["Body"].read().decode("utf-8"),
+            parse_float=Decimal
+        )
 
-        for feature in data.get("features", []):
+        features = data.get("features", [])
+
+        print(f"Total Features : {len(features)}")
+
+        for feature in features:
 
             total_records += 1
 
@@ -47,15 +58,16 @@ def lambda_handler(event, context):
             place = props.get("place")
             timestamp = props.get("time")
 
-            # Skip invalid records
             if earthquake_id is None or magnitude is None:
                 rejected_records += 1
                 continue
 
+            magnitude = Decimal(str(magnitude))
+
             item = {
-                "record_id": earthquake_id,
-                "place": place if place else "Unknown",
-                "magnitude": round(float(magnitude), 1),
+                "record_id": str(earthquake_id),
+                "place": str(place) if place else "Unknown",
+                "magnitude": magnitude,
                 "risk_level": get_risk_level(float(magnitude)),
                 "event_time": datetime.utcfromtimestamp(
                     timestamp / 1000
@@ -67,19 +79,26 @@ def lambda_handler(event, context):
 
             inserted_records += 1
 
-        print("===== ETL SUMMARY =====")
+        print("========== ETL SUMMARY ==========")
         print(f"Total Records    : {total_records}")
         print(f"Inserted Records : {inserted_records}")
         print(f"Rejected Records : {rejected_records}")
 
         return {
             "statusCode": 200,
-            "body": json.dumps("ETL Completed Successfully")
+            "body": json.dumps({
+                "message": "ETL Completed Successfully",
+                "total": total_records,
+                "inserted": inserted_records,
+                "rejected": rejected_records
+            })
         }
 
     except Exception as e:
 
-        print("ERROR :", str(e))
+        print("========== ERROR ==========")
+        print(str(e))
+        traceback.print_exc()
 
         return {
             "statusCode": 500,
