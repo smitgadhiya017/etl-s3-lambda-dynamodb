@@ -1,0 +1,110 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated": 1782750000000,
+    "title": "USGS Earthquake Sample Data",
+    "status": 200,
+    "api": "1.0.0",
+    "count": 3
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 4.8,
+        "place": "35 km NW of Los Angeles, California",
+        "time": 1782745200000,
+        "updated": 1782745300000,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/",
+        "detail": "https://earthquake.usgs.gov/",
+        "felt": 12,
+        "cdi": 3.5,
+        "mmi": 4.1,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 354,
+        "net": "us",
+        "code": "sample001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2437,
+          34.0522,
+          12.5
+        ]
+      },
+      "id": "sample001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "12 km SE of Tokyo, Japan",
+        "time": 1782748800000,
+        "updated": 1782748900000,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/",
+        "detail": "https://earthquake.usgs.gov/",
+        "felt": 2,
+        "cdi": 2.1,
+        "mmi": 2.0,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "us",
+        "code": "sample002"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6917,
+          35.6895,
+          35.2
+        ]
+      },
+      "id": "sample002"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 6.3,
+        "place": "80 km SW of Banda Aceh, Indonesia",
+        "time": 1782752400000,
+        "updated": 1782752500000,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/",
+        "detail": "https://earthquake.usgs.gov/",
+        "felt": 48,
+        "cdi": 5.2,
+        "mmi": 6.0,
+        "alert": "yellow",
+        "status": "reviewed",
+        "tsunami": 1,
+        "sig": 612,
+        "net": "us",
+        "code": "sample003"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.3238,
+          5.5483,
+          20.8
+        ]
+      },
+      "id": "sample003"
+    }
+  ],
+  "bbox": [
+    -118.2437,
+    5.5483,
+    12.5,
+    139.6917,
+    35.6895,
+    35.2
+  ]
+}
