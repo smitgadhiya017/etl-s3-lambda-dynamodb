@@ -1,11 +1,12 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated": 1782750000000,
-    "title": "USGS Earthquake Sample Data",
+    "generated": 1782900000000,
+    "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson",
+    "title": "USGS All Earthquakes, Past Day (Sample)",
     "status": 200,
-    "api": "1.0.0",
-    "count": 3
+    "api": "1.14.1",
+    "count": 5
   },
   "features": [
     {
@@ -13,98 +14,135 @@
       "properties": {
         "mag": 4.8,
         "place": "35 km NW of Los Angeles, California",
-        "time": 1782745200000,
-        "updated": 1782745300000,
+        "time": 1782896400000,
+        "updated": 1782896700000,
         "tz": null,
         "url": "https://earthquake.usgs.gov/",
         "detail": "https://earthquake.usgs.gov/",
-        "felt": 12,
+        "felt": 18,
         "cdi": 3.5,
-        "mmi": 4.1,
+        "mmi": 4.2,
         "alert": null,
         "status": "reviewed",
         "tsunami": 0,
         "sig": 354,
         "net": "us",
-        "code": "sample001"
+        "code": "7000abcd",
+        "ids": ",us7000abcd,",
+        "sources": ",us,",
+        "types": ",origin,phase-data,",
+        "nst": 42,
+        "dmin": 0.12,
+        "rms": 0.68,
+        "gap": 58,
+        "magType": "mb",
+        "type": "earthquake"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -118.2437,
           34.0522,
-          12.5
+          12.4
         ]
       },
-      "id": "sample001"
+      "id": "us7000abcd"
     },
     {
       "type": "Feature",
       "properties": {
-        "mag": 2.6,
+        "mag": 2.9,
         "place": "12 km SE of Tokyo, Japan",
-        "time": 1782748800000,
-        "updated": 1782748900000,
-        "tz": null,
-        "url": "https://earthquake.usgs.gov/",
-        "detail": "https://earthquake.usgs.gov/",
-        "felt": 2,
-        "cdi": 2.1,
-        "mmi": 2.0,
-        "alert": null,
+        "time": 1782898200000,
+        "updated": 1782898500000,
         "status": "reviewed",
         "tsunami": 0,
-        "sig": 104,
-        "net": "us",
-        "code": "sample002"
+        "magType": "ml",
+        "type": "earthquake"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           139.6917,
           35.6895,
-          35.2
+          42.8
         ]
       },
-      "id": "sample002"
+      "id": "us7000abce"
     },
     {
       "type": "Feature",
       "properties": {
-        "mag": 6.3,
+        "mag": 6.2,
         "place": "80 km SW of Banda Aceh, Indonesia",
-        "time": 1782752400000,
-        "updated": 1782752500000,
-        "tz": null,
-        "url": "https://earthquake.usgs.gov/",
-        "detail": "https://earthquake.usgs.gov/",
-        "felt": 48,
-        "cdi": 5.2,
-        "mmi": 6.0,
-        "alert": "yellow",
+        "time": 1782900000000,
+        "updated": 1782900300000,
         "status": "reviewed",
         "tsunami": 1,
-        "sig": 612,
-        "net": "us",
-        "code": "sample003"
+        "magType": "mw",
+        "type": "earthquake"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           95.3238,
           5.5483,
-          20.8
+          18.2
         ]
       },
-      "id": "sample003"
+      "id": "us7000abcf"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 3.7,
+        "place": "25 km N of Kathmandu, Nepal",
+        "time": 1782901800000,
+        "updated": 1782902100000,
+        "status": "reviewed",
+        "tsunami": 0,
+        "magType": "mb",
+        "type": "earthquake"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3240,
+          27.7172,
+          10.5
+        ]
+      },
+      "id": "us7000abcg"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.5,
+        "place": "45 km E of Santiago, Chile",
+        "time": 1782903600000,
+        "updated": 1782903900000,
+        "status": "reviewed",
+        "tsunami": 0,
+        "magType": "mw",
+        "type": "earthquake"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6693,
+          -33.4489,
+          22.6
+        ]
+      },
+      "id": "us7000abch"
     }
   ],
   "bbox": [
     -118.2437,
-    5.5483,
-    12.5,
+    -33.4489,
+    10.5,
     139.6917,
     35.6895,
-    35.2
+    42.8
   ]
 }

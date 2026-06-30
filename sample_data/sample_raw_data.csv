@@ -1,0 +1,6 @@
+record_id,place,magnitude,event_time
+us7000abcd,"35 km NW of Los Angeles, California",4.8,2026-07-01 10:00:00 UTC
+us7000abce,"12 km SE of Tokyo, Japan",2.9,2026-07-01 10:05:00 UTC
+us7000abcf,"80 km SW of Banda Aceh, Indonesia",6.2,2026-07-01 10:10:00 UTC
+us7000abcg,"25 km N of Kathmandu, Nepal",3.7,2026-07-01 10:15:00 UTC
+us7000abch,"45 km E of Santiago, Chile",5.5,2026-07-01 10:20:00 UTC

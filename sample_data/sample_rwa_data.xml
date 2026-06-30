@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<earthquakes>
+
+    <record>
+        <record_id>us7000abcd</record_id>
+        <place>35 km NW of Los Angeles, California</place>
+        <magnitude>4.8</magnitude>
+        <event_time>2026-07-01 10:00:00 UTC</event_time>
+    </record>
+
+    <record>
+        <record_id>us7000abce</record_id>
+        <place>12 km SE of Tokyo, Japan</place>
+        <magnitude>2.9</magnitude>
+        <event_time>2026-07-01 10:05:00 UTC</event_time>
+    </record>
+
+    <record>
+        <record_id>us7000abcf</record_id>
+        <place>80 km SW of Banda Aceh, Indonesia</place>
+        <magnitude>6.2</magnitude>
+        <event_time>2026-07-01 10:10:00 UTC</event_time>
+    </record>
+
+    <record>
+        <record_id>us7000abcg</record_id>
+        <place>25 km N of Kathmandu, Nepal</place>
+        <magnitude>3.7</magnitude>
+        <event_time>2026-07-01 10:15:00 UTC</event_time>
+    </record>
+
+    <record>
+        <record_id>us7000abch</record_id>
+        <place>45 km E of Santiago, Chile</place>
+        <magnitude>5.5</magnitude>
+        <event_time>2026-07-01 10:20:00 UTC</event_time>
+    </record>
+
+</earthquakes>
